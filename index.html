@@ -15,17 +15,29 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
 
 <body> 
     <div class="container">
-        <h1>Welcome to Drinking Game</h1>
-        <div id="resultArea">Show Result</div>
-        <div id="guessRemainArea">Show Remaining Amount of Guesses</div>
-        <input type="number" id="guessNumber" />
-        <button onclick="guess()" id="guessBtn">Guess</button>
-        <button onclick="reset()">Reset</button>
-        <div id="historyArea">Show History</div>
+        <h1>Guess the Number</h1>
+        
+        <div id="guessRemainArea">Guess correctly within 3 tries...</div>
+        
+        <div class="form">
+            <input type="number" id="guessNumber" placeholder="Enter a number" />
+            <button onclick="guess()" id="guessBtn">Guess</button>
+        </div>
+        
+        <div id="historyArea">Numbers entered:</div>
+
+        <div id="resultArea">The result will be displayed here</div>
+
+        <div class="reset">
+            <button onclick="reset()" id="resetBtn">Reset</button>
+        </div>
     </div>
 
     <script src="main.js"></script>

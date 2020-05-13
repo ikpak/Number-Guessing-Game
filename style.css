@@ -1,0 +1,78 @@
+body {
+    background-image: url(img/question-marks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Acme', sans-serif;
+    color: #262626;
+}
+
+.container {
+    background-color: white;
+    max-width: 800px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+#guessRemainArea {
+    text-align: center;
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#guessBtn {
+    background-color: #8C647E;
+    color: white;
+    border-style: none;
+    padding: 5px 10px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+#resetBtn {
+    background-color: #262626;
+    color: white;
+    border-style: none;
+    padding: 5px 20px;
+}
+
+#historyArea {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#resultArea {
+    background-color: #F2b84b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+}

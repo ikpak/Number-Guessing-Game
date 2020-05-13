@@ -15,30 +15,30 @@ function guess() {
         // 4. Compare with the value computer picked
         // 5. If computer num > user num, "too low"
         if(computerNum > userNum) {
-            resultMessage = "too low"
+            resultMessage = "The numbers guessed is too low..."
             guessesRemaining = guessesRemaining - 1 
         }
 
         // 6. If computer num < user num, "too high"
         else if(computerNum < userNum) {
-            resultMessage = "too high"
+            resultMessage = "The number guessed is too high..."
             guessesRemaining = guessesRemaining - 1  
         }
 
         // 7. If computer num == user num, "correct"
         else if(computerNum == userNum) {
-            resultMessage = "You win"
+            resultMessage = "You win!!!"
         }
     }
     
     if(guessesRemaining === 0) {
-        resultMessage = "You lose"
+        resultMessage = "You lose :("
     }
 
-    if(resultMessage == "You lose") {
+    if(resultMessage == "You lose :(") {
         let button = document.getElementById("guessBtn")
         button.disabled = true
-    } else if(resultMessage == "You win") {
+    } else if(resultMessage == "You win!!!") {
         let button = document.getElementById("guessBtn")
         button.disabled = true
     }
@@ -49,9 +49,9 @@ function guess() {
     // 8. Display the result
     document.getElementById("resultArea").innerHTML = `${resultMessage}`
 
-    document.getElementById("guessRemainArea").innerHTML = `You have ${guessesRemaining} guesses left`
+    document.getElementById("guessRemainArea").innerHTML = ` ${guessesRemaining} guesses left`
 
-    document.getElementById("historyArea").innerHTML = `Your past guesses: ${history}`
+    document.getElementById("historyArea").innerHTML = `Numbers entered: ${history}`
 }
 
 function reset() {
@@ -61,9 +61,9 @@ function reset() {
     console.log("This is what computer chose", computerNum)
     document.getElementById("guessNumber").value = '';
     resultMessage = '';
-    document.getElementById("resultArea").innerHTML = `Show Result`
-    document.getElementById("guessRemainArea").innerHTML = `Show Remaining Amount of Guesses`
-    document.getElementById("historyArea").innerHTML = `Show History`
+    document.getElementById("resultArea").innerHTML = `The result will be displayed here`
+    document.getElementById("guessRemainArea").innerHTML = `Guess correctly within 3 tries...`
+    document.getElementById("historyArea").innerHTML = `Numbers entered:`
     button = document.getElementById("guessBtn")
     button.disabled = false
 }
