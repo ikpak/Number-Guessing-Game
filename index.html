@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link
+  rel="stylesheet"
+  crossorigin="anonymous"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <div class="container">
+        <h1>Welcome to Drinking Game</h1>
+        <div id="resultArea">Show Result</div>
+        <div id="guessRemainArea">Show Remaining Amount of Guesses</div>
+        <input type="number" id="guessNumber" />
+        <button onclick="guess()" id="guessBtn">Guess</button>
+        <button onclick="reset()">Reset</button>
+        <div id="historyArea">Show History</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
