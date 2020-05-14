@@ -21,12 +21,18 @@ h1 {
     font-size: 50px;
 }
 
+#timecount {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
 #guessRemainArea {
     text-align: center;
     font-size: 18px;
 }
 
-.form {
+.guessArea {
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -35,6 +41,7 @@ h1 {
 
 input {
     border-radius: 5px;
+    padding-left: 10px;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
