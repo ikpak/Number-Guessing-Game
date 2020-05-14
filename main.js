@@ -48,6 +48,7 @@ function guess() {
 
         // 7. If computer num == user num, "correct"
         else if(computerNum == userNum) {
+            timeOut()
             resultMessage = "You win!!!"
         }
     //}
@@ -78,7 +79,7 @@ function guess() {
 
     document.getElementById("guessRemainArea").innerHTML = ` ${guessesRemaining} guesses left`
 
-    // document.getElementById("historyArea").innerHTML = `Numbers entered: ${history}`
+    document.getElementById("historyArea").innerHTML = `Numbers entered: ${history}`
 }
 
 function reset() {
